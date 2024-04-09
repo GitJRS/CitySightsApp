@@ -14,6 +14,7 @@
 		1B8755A62BC4CC4A0081AAB0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755A52BC4CC4A0081AAB0 /* DataService.swift */; };
 		1B8755AB2BC4E7380081AAB0 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755AA2BC4E7380081AAB0 /* BusinessSearch.swift */; };
 		1B8755AD2BC4E76A0081AAB0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755AC2BC4E76A0081AAB0 /* Business.swift */; };
+		1B8755B02BC56D450081AAB0 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755AF2BC56D450081AAB0 /* TextHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1B8755A52BC4CC4A0081AAB0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1B8755AA2BC4E7380081AAB0 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		1B8755AC2BC4E76A0081AAB0 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		1B8755AF2BC56D450081AAB0 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				1B8755972BC363C00081AAB0 /* ContentView.swift */,
 				1B8755A52BC4CC4A0081AAB0 /* DataService.swift */,
 				1B8755A92BC4E7100081AAB0 /* Model */,
+				1B8755AE2BC56D330081AAB0 /* Helpers */,
 				1B8755A32BC373B90081AAB0 /* Config.xcconfig */,
 				1B8755992BC363C60081AAB0 /* Assets.xcassets */,
 				1B87559B2BC363C60081AAB0 /* Preview Content */,
@@ -86,6 +89,14 @@
 				1B8755AC2BC4E76A0081AAB0 /* Business.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1B8755AE2BC56D330081AAB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B8755AF2BC56D450081AAB0 /* TextHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				1B8755AB2BC4E7380081AAB0 /* BusinessSearch.swift in Sources */,
 				1B8755982BC363C00081AAB0 /* ContentView.swift in Sources */,
 				1B8755AD2BC4E76A0081AAB0 /* Business.swift in Sources */,
+				1B8755B02BC56D450081AAB0 /* TextHelper.swift in Sources */,
 				1B8755962BC363C00081AAB0 /* CitySights_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
