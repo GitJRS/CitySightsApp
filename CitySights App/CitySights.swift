@@ -1,5 +1,5 @@
 //
-//  CitySights_AppApp.swift
+//  CitySights.swift
 //  CitySights App
 //
 //  Created by MacBook2014 on 4/7/24.
@@ -8,13 +8,13 @@
 import SwiftUI
 
 @main
-struct CitySights_AppApp: App {
+struct CitySights: App {
   
   @State var model = BusinessModel()
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      HomeView()
         .environment(model)
     }
   }
