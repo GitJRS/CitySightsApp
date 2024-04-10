@@ -43,7 +43,7 @@ struct HomeView: View {
       }
       .pickerStyle(SegmentedPickerStyle())
       
-      // show map or list
+      // show map or list child view
       if selectedTab == 1 {
         MapView()
       } else {

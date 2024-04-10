@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// child of HomeView
 struct ListView: View {
   
   @Environment(BusinessModel.self) var model
