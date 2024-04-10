@@ -19,6 +19,9 @@
 		1B8755D02BC6211F0081AAB0 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */; };
 		1B8755D22BC625120081AAB0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755D12BC625120081AAB0 /* MapView.swift */; };
 		1B8755D42BC625800081AAB0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755D32BC625800081AAB0 /* ListView.swift */; };
+		1B8755D62BC6C5310081AAB0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755D52BC6C5310081AAB0 /* OnboardingView.swift */; };
+		1B8755D82BC6E68F0081AAB0 /* HelperUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755D72BC6E68F0081AAB0 /* HelperUtils.swift */; };
+		1B8755DA2BC717C10081AAB0 /* OnboardingViewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755D92BC717C10081AAB0 /* OnboardingViewDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		1B8755D12BC625120081AAB0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1B8755D32BC625800081AAB0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		1B8755D52BC6C5310081AAB0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1B8755D72BC6E68F0081AAB0 /* HelperUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUtils.swift; sourceTree = "<group>"; };
+		1B8755D92BC717C10081AAB0 /* OnboardingViewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +77,14 @@
 			children = (
 				1B8755A42BC374C50081AAB0 /* CitySights-App-Info.plist */,
 				1B8755952BC363C00081AAB0 /* CitySights.swift */,
+				1B8755DB2BC717CA0081AAB0 /* Onboarding */,
 				1B8755972BC363C00081AAB0 /* HomeView.swift */,
 				1B8755D12BC625120081AAB0 /* MapView.swift */,
 				1B8755D32BC625800081AAB0 /* ListView.swift */,
 				1B8755B12BC5A0150081AAB0 /* BusinessDetailView.swift */,
 				1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */,
 				1B8755A52BC4CC4A0081AAB0 /* DataService.swift */,
+				1B8755D72BC6E68F0081AAB0 /* HelperUtils.swift */,
 				1B8755A92BC4E7100081AAB0 /* Model */,
 				1B8755AE2BC56D330081AAB0 /* Helpers */,
 				1B8755A32BC373B90081AAB0 /* Config.xcconfig */,
@@ -109,6 +117,15 @@
 				1B8755AF2BC56D450081AAB0 /* TextHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B8755DB2BC717CA0081AAB0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1B8755D52BC6C5310081AAB0 /* OnboardingView.swift */,
+				1B8755D92BC717C10081AAB0 /* OnboardingViewDetails.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +202,15 @@
 				1B8755B22BC5A0150081AAB0 /* BusinessDetailView.swift in Sources */,
 				1B8755D42BC625800081AAB0 /* ListView.swift in Sources */,
 				1B8755AB2BC4E7380081AAB0 /* BusinessSearch.swift in Sources */,
+				1B8755DA2BC717C10081AAB0 /* OnboardingViewDetails.swift in Sources */,
 				1B8755D02BC6211F0081AAB0 /* BusinessModel.swift in Sources */,
+				1B8755D82BC6E68F0081AAB0 /* HelperUtils.swift in Sources */,
 				1B8755982BC363C00081AAB0 /* HomeView.swift in Sources */,
 				1B8755AD2BC4E76A0081AAB0 /* Business.swift in Sources */,
 				1B8755B02BC56D450081AAB0 /* TextHelper.swift in Sources */,
 				1B8755D22BC625120081AAB0 /* MapView.swift in Sources */,
 				1B8755962BC363C00081AAB0 /* CitySights.swift in Sources */,
+				1B8755D62BC6C5310081AAB0 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
