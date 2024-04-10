@@ -16,6 +16,7 @@
 		1B8755AD2BC4E76A0081AAB0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755AC2BC4E76A0081AAB0 /* Business.swift */; };
 		1B8755B02BC56D450081AAB0 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755AF2BC56D450081AAB0 /* TextHelper.swift */; };
 		1B8755B22BC5A0150081AAB0 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755B12BC5A0150081AAB0 /* BusinessDetailView.swift */; };
+		1B8755D02BC6211F0081AAB0 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1B8755AC2BC4E76A0081AAB0 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		1B8755AF2BC56D450081AAB0 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 		1B8755B12BC5A0150081AAB0 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
+		1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				1B8755952BC363C00081AAB0 /* CitySights_AppApp.swift */,
 				1B8755972BC363C00081AAB0 /* ContentView.swift */,
 				1B8755B12BC5A0150081AAB0 /* BusinessDetailView.swift */,
+				1B8755CF2BC6211F0081AAB0 /* BusinessModel.swift */,
 				1B8755A52BC4CC4A0081AAB0 /* DataService.swift */,
 				1B8755A92BC4E7100081AAB0 /* Model */,
 				1B8755AE2BC56D330081AAB0 /* Helpers */,
@@ -175,6 +178,7 @@
 				1B8755A62BC4CC4A0081AAB0 /* DataService.swift in Sources */,
 				1B8755B22BC5A0150081AAB0 /* BusinessDetailView.swift in Sources */,
 				1B8755AB2BC4E7380081AAB0 /* BusinessSearch.swift in Sources */,
+				1B8755D02BC6211F0081AAB0 /* BusinessModel.swift in Sources */,
 				1B8755982BC363C00081AAB0 /* ContentView.swift in Sources */,
 				1B8755AD2BC4E76A0081AAB0 /* Business.swift in Sources */,
 				1B8755B02BC56D450081AAB0 /* TextHelper.swift in Sources */,
