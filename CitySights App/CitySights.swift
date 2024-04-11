@@ -23,6 +23,7 @@ struct CitySights: App {
           needsOnboarding = false
         } content: {
           OnboardingView()
+            .environment(model)
         }
     }
   }

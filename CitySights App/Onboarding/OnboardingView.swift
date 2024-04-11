@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
   
+  @Environment(BusinessModel.self) var model
   @Environment(\.dismiss) var dismiss
   @State var selectedViewIndex = 0
   
@@ -53,6 +54,8 @@ struct OnboardingView: View {
                               subHeadline: subHead2,
                               headGradientTop: Color(hex: "EEBB77"),
                               headGradientBottom: Color(hex: "FFFFFF")) {
+          // get location permission
+          model.getUserLocation()
           dismiss()
         }
                               .tag(1)
