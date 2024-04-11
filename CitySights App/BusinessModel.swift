@@ -13,7 +13,6 @@ import CoreLocation
 class BusinessModel: NSObject, CLLocationManagerDelegate {
   
   var businesses = [Business]()
-  var query: String = ""
   var selectedBusiness: Business?
   
   var dataService = DataService()
@@ -27,10 +26,13 @@ class BusinessModel: NSObject, CLLocationManagerDelegate {
     locationManager.delegate = self
   }
   
-  func getBusinesses() {
+  func getBusinesses(query: String?, options: String?, category: String?) {
     
     Task {
-      businesses = await dataService.businessSearch(userLocation: currentUserLocation)
+      businesses = await dataService.businessSearch(userLocation: currentUserLocation,
+                                                    query: query,
+                                                    options: options,
+                                                    category: category)
     }
   }
   
@@ -67,7 +69,7 @@ class BusinessModel: NSObject, CLLocationManagerDelegate {
       currentUserLocation = locations.last?.coordinate
       
       // search businesses api call
-      getBusinesses()
+      getBusinesses(query: nil, options: nil, category: nil)
     }
     manager.stopUpdatingLocation()
   }
