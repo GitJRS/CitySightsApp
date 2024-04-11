@@ -16,10 +16,30 @@ struct BusinessDetailView: View {
     let business = model.selectedBusiness
     
     VStack (spacing: 0) {
+      
       ZStack (alignment: .trailing) {
-        Image("detail-placeholder-image")
-          .resizable()
+        
+        if let imageURL = business?.imageUrl {
+          AsyncImage(url: URL(string: imageURL)!) { image in
+            image
+              .resizable()
+              .aspectRatio(contentMode: .fill)
+              .frame(height: 164)
+              .clipped()
+
+          } placeholder: {
+            ProgressView()
+              .frame(width: 150, height: 150)
+          }
+
+        }
+        else {
+          Image("detail-placeholder-image")
+            .resizable()
+        }
+        
         VStack {
+          
           Spacer()
           Image("yelp-attribution-image")
             .frame(width: 72, height: 36)
@@ -30,8 +50,10 @@ struct BusinessDetailView: View {
       if let isClosed = business?.isClosed {
         
         ZStack (alignment: .leading) {
+          
           Rectangle()
             .foregroundColor(isClosed ? .red : .green)
+          
           Text(isClosed ? "Closed" : "Open")
             .bold()
             .foregroundColor(.white)
@@ -41,7 +63,9 @@ struct BusinessDetailView: View {
       }
       
       ScrollView {
+        
         VStack (alignment: .leading, spacing: 0) {
+          
           Text(business?.name ?? "business name")
             .font(Font.system(size: 21))
             .bold()
