@@ -86,8 +86,18 @@ struct BusinessDetailView: View {
           Divider()
           
           HStack {
+            
             Image(systemName: "phone")
-            Text(business?.phone ?? "Phone")
+            
+            if let url = URL(string: "tel:\(business?.phone ?? "")") {
+              
+              Link(destination: url) {
+                Text(business?.phone ?? "")
+              }
+            } else {
+              Text(business?.phone ?? "")
+            }
+            
             Spacer()
             Image(systemName: "arrow.right")
               .foregroundColor(.blue)
@@ -98,8 +108,18 @@ struct BusinessDetailView: View {
           
           HStack {
             Image(systemName: "network")
-            Text(business?.url ?? "website")
-              .lineLimit(1)
+            
+            if let url = URL(string: "\(business?.url ?? "")") {
+              
+              Link(destination: url) {
+                Text(business?.url ?? "website")
+                  .lineLimit(1)
+              }
+            } else {
+              Text(business?.url ?? "website")
+                .lineLimit(1)
+            }
+            
             Spacer()
             Image(systemName: "arrow.right")
               .foregroundColor(.blue)
@@ -111,9 +131,6 @@ struct BusinessDetailView: View {
           HStack {
             Image(systemName: "bubble.left.and.bubble.right")
             Text("\(business?.reviewCount ?? 0) reviews")
-            Spacer()
-            Image(systemName: "arrow.right")
-              .foregroundColor(.blue)
           }
           .padding(.vertical, 12)
           
